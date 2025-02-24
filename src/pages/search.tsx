@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Flame } from "lucide-react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 export default function SearchPage() {
   const [topic, setTopic] = useState("");
@@ -16,7 +16,7 @@ export default function SearchPage() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 via-pink-50 to-red-50 p-4">
       <div className="w-full max-w-md animate-fade-up">
         <Link 
-          href="/"
+          to="/"
           className="block text-center mb-8 text-purple-600 hover:text-purple-700 transition-colors"
         >
           ← Back to Home

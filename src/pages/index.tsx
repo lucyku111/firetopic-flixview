@@ -1,5 +1,5 @@
 
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { Flame, BookOpen, Sparkles, DollarSign } from "lucide-react";
 
 export default function LandingPage() {
@@ -15,7 +15,7 @@ export default function LandingPage() {
             Understand any topic through the lens of your favorite movies and web series
           </p>
           <Link 
-            href="/search" 
+            to="/search" 
             className="inline-block px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white rounded-lg font-medium shadow-lg transition-all duration-300 hover:scale-105"
           >
             Try Now
@@ -73,7 +73,7 @@ export default function LandingPage() {
               <li>✓ Popular Shows</li>
             </ul>
             <Link 
-              href="/search" 
+              to="/search" 
               className="block w-full py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white rounded-lg font-medium shadow-lg transition-all duration-300 hover:scale-105"
             >
               Start Free
